@@ -13,7 +13,7 @@ public class Util {
         //Call getScreenshotAs method to create image file
         File sourceFile = screenShot.getScreenshotAs(OutputType.FILE);
 
-        String screenShotPath = System.getProperty("user.dir")+"/screenshots" +
+        String screenShotPath = System.getProperty("user.dir")+"/TestReports/screenshots" +
                 "/"+pageName+System.currentTimeMillis()+".jpg";
         File destFile = new File(screenShotPath);
         FileUtils.copyFile(sourceFile, destFile);
